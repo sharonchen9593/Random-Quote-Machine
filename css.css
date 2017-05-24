@@ -1,14 +1,15 @@
 body {
   background-color: #86e2b1;
-  color: white;
+  color:;
 }
 
 .quotebox {
   background-color: white;
-  margin: 25% auto 25% auto;
+  margin: 10% auto 40px auto;
   width: 50%;
-  padding: 60px;
+  padding: 80px;
   color: #64c493;
+  border-radius: 4px;
 }
 
 .quote {
@@ -32,9 +33,13 @@ body {
 .newQuote {
   position: relative;
   float: right;
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
   border: 0;
+  font-size: 20px;
+  background-color: #86e2b1;
+  color: white;
+  border-radius: 4px;
 }
 
 .fa-quote-right {
@@ -42,4 +47,21 @@ body {
   float: right;
   padding: 0;
   margin: 0;
+}
+
+.twitterbutton {
+  background-color: #86e2b1;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  float: left;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-top: 5px;
+}
+
+footer {
+  color: white;
+  font-family: Arial;
+  text-align: center;
 }

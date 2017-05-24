@@ -1,25 +1,34 @@
 //Random Quote Machine
-var loadQuote = $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(json) {
-  var quote = '' + json.quoteText + ''
-  $(".quote").html(quote)
-  var author = "~" + json.quoteAuthor + "";
-  $(".author").html(author)
-  })
+
 
 
 
 
 
 $(document).ready(function() {
-  loadQuote;
+  //initial quote
+  $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(json) {
+    currentQuote = json.quoteText;
+    currentAuthor = json.quoteAuthor;
+    var quote = '' + currentQuote + ''
+    $(".quote").html(quote)
+    var author = "~" + currentAuthor + "";
+    $(".author").html(author)
+    $('.twitterbutton').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + currentQuote + currentAuthor + '')
+  })
 
   $('.newQuote').on('click', function() {
     $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(json) {
-  var quote = '' + json.quoteText + ''
-  $(".quote").html(quote)
-  var author = "~" + json.quoteAuthor + "";
-  $(".author").html(author)
-  })
-  })
+    currentQuote = json.quoteText;
+    currentAuthor = json.quoteAuthor;
+    var quote = '' + currentQuote + ''
+    $(".quote").html(quote)
+    var author = "~" + currentAuthor + "";
+    $(".author").html(author)
+    $('.twitterbutton').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + currentQuote + currentAuthor + '')
+    })
+    })
+
+
 })
 
