@@ -20,3 +20,9 @@ body {
   padding: 10px;
 }
 
+.newQuote {
+  position: relative;
+  float: right;
+  padding: 5px;
+  margin: 10px;
+}
