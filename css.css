@@ -1,5 +1,6 @@
 body {
-  background-color: lightblue;
+  background-color: #86e2b1;
+  color: white;
 }
 
 .quotebox {
@@ -7,17 +8,25 @@ body {
   margin: 25% auto 25% auto;
   width: 50%;
   padding: 60px;
+  color: #64c493;
 }
 
 .quote {
   text-align: center;
   padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: 'Marck Script', cursive;
+  font-size: 40px;
 
 }
 
 .author {
   text-align: right;
   padding: 10px;
+  padding-top: 50px;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 40px;
 }
 
 .newQuote {
@@ -25,4 +34,12 @@ body {
   float: right;
   padding: 5px;
   margin: 10px;
+  border: 0;
+}
+
+.fa-quote-right {
+  position: relative;
+  float: right;
+  padding: 0;
+  margin: 0;
 }
